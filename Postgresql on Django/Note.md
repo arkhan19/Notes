@@ -115,4 +115,5 @@ Drop a table
 	testdb=# \dt
 	testdb=# DROP TABLE auth_group CASCADE;
 
+------------------------------------------------------------------------------------------------------------------------------------------
 [Migrating Sqlite3 to Postgresql](http://stackoverflow.com/questions/4581727/convert-sqlite-sql-dump-file-to-postgresql/4581921#4581921)
