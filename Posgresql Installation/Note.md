@@ -4,11 +4,12 @@
 ##### Using Homebrew
 ##### Install Homebrew: Linux | Mac
 
+'''
 brew update \
 brew upgrade\
 brew doctor \
 brew install postgresql --with-python
-
+'''
 # Activate PostgreSQL
 ##### Quick activation:
 
