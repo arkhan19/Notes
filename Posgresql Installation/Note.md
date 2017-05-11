@@ -5,16 +5,16 @@
 ##### Install Homebrew: Linux | Mac
 
 ```
-brew update \
-brew upgrade\
-brew doctor \
+brew update
+brew upgrade
+brew doctor
 brew install postgresql --with-python
 ```
 # Activate PostgreSQL
 ##### Quick activation:
 ```
-mkdir -p ~/Library/LaunchAgents \
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents \
+mkdir -p ~/Library/LaunchAgents
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ```
 ##### The above command comes from a fresh install of postgresql via Homebrew which will show you:
@@ -41,7 +41,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 ###### To reload postgresql after an upgrade:
 ```
-  launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist \
+  launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
   launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ```
 ###### Or, if you don't want/need launchctl, you can just run:
@@ -50,7 +50,7 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ```
 # Now, test postgresql with:
 ```
-createdb \
+createdb
 psql
 ```
 ##### You should see something like:
