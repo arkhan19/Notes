@@ -72,3 +72,35 @@ $ pip uninstall awsebcli
 ```
 
 
+To summarize :
+
+# install the binary
+$ brew install postgresql
+
+# init it
+$ initdb /usr/local/var/postgres
+
+# start the postgres server
+$ postgres -D /usr/local/var/postgres
+
+# create your database
+$ createdb mydb
+Then play around with it:
+
+Erics-MacBook:~ eric$ psql mydb
+psql (9.0.1)
+Type "help" for help.
+
+mydb=# create table users(id serial, name varchar(25));
+NOTICE:  CREATE TABLE will create implicit sequence "users_id_seq" for serial column "users.id"
+CREATE TABLE
+mydb=# insert into users(name) values('eric');
+INSERT 0 1
+mydb=# insert into users(name) values('lxneng');
+INSERT 0 1
+mydb=# select * from users;
+ id |    name
+----+-------------
+  1 | eric
+  2 | lxneng
+mydb=# \q
