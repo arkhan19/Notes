@@ -1,4 +1,4 @@
-![Alt Text](https://s-media-cache-ak0.pinimg.com/originals/3a/6e/57/3a6e574a01e932b6f91f77c5971846c1.png)
+![Alt Text](https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/postgresql_twitter.png)
 # Install PostgreSQL on Mac OS X / Linux A simple guide on how to install PostgreSQL on your local Mac or Linux machine.
 
 ##### Using Homebrew
